@@ -38,3 +38,16 @@ After Synthea completes the data generation, go to output/symptoms/csv within th
 
 **Executive Summary**
 
+* Queried synthetic patient data from Synthea™, a Synthetic Patient Population Simulator, to generate realistic (artificial), patient data and associated health records for patients in the state of Tennessee.
+
+* Performed data cleaning to extract practical symptom descriptions, eliminating non-alphabetic characters and extraneous whitespace from the symptom list, ensuring consistency for further analysis.
+
+* Used the Jaccard Similarity Coefficient to measure the similarity between sets of symptoms, facilitating clustering analysis given the set-based nature of the symptom data.
+
+* Performed Hierarchical Clustering with AgglomerativeClustering algorithm to cluster patients based on symptom similarities, which should help with outbreak tracking and patient categorization.
+
+* Derived 40 distinct clusters of symptoms to efficiently categorize patients, setting a tracking protocol for potential outbreaks and understanding patient symptoms.
+
+* Integrated a question-answering system with ChatGPT 3.5 to keep a dynamic record of individual patient's history, providing a seamless interface for querying patient data and gaining insights into their health conditions (no UI).
+
+* Integrated a user-friendly website interface (UI) using Streamlit, enabling users to upload their CSV files containing hashed patient data. This portal integrates with the ChatGPT language model, facilitating immediate responses to healthcare workers inquiries regarding patient information.
